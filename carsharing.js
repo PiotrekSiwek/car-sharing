@@ -1,17 +1,13 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
 
     const header = document.querySelector(".page-header")
-    console.log(header);
 
-    window.addEventListener("scroll", function(){
-        if(window.scroll > 150) {
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 150) {
             header.classList.add("page-header--sticky")
-        } else{
+        } else {
             header.classList.remove("page-header--sticky")
         }
-
-
     });
 
 });
-
